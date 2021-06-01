@@ -6,11 +6,15 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="description" content="剑指offer学习指南剑指 Offer 04. 二维数组中的查找123456789101112131415&#x2F;&#x2F;2021.3.6 暴力破解class Solution &amp;#123;public:    bool findNumberIn2DArray(vector&lt;vector&lt;int&gt;&gt;&amp; matrix, int target) &amp;#123;        bool">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2021/06/01/%E5%89%91%E6%8C%87offer%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="剑指offer学习指南剑指 Offer 04. 二维数组中的查找123456789101112131415&#x2F;&#x2F;2021.3.6 暴力破解class Solution &amp;#123;public:    bool findNumberIn2DArray(vector&lt;vector&lt;int&gt;&gt;&amp; matrix, int target) &amp;#123;        bool">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-06-01T15:08:38.886Z">
+<meta property="article:modified_time" content="2021-03-30T13:27:33.303Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -69,148 +73,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-LeetCode 热题 HOT 100" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/06/01/LeetCode%20%E7%83%AD%E9%A2%98%20HOT%20100/" class="article-date">
-  <time class="dt-published" datetime="2021-06-01T15:08:38.916Z" itemprop="datePublished">2021-06-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="🔥-LeetCode-热题-HOT-100"><a href="#🔥-LeetCode-热题-HOT-100" class="headerlink" title="🔥 LeetCode 热题 HOT 100"></a>🔥 LeetCode 热题 HOT 100</h1><h4 id="1-两数之和"><a href="#1-两数之和" class="headerlink" title="1. 两数之和"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/two-sum/">1. 两数之和</a></h4><p>2021.5.31 初刷</p>
-<p>时间复杂度：O（n^2）</p>
-<p>空间复杂度：O（1）</p>
-<h5 id="暴力求解"><a href="#暴力求解" class="headerlink" title="暴力求解"></a>暴力求解</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">twoSum</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; nums, <span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        vector&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">       <span class="keyword">for</span>(<span class="keyword">int</span> i =<span class="number">0</span>;i&lt;nums.<span class="built_in">size</span>();i++)&#123;</span><br><span class="line">           <span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;nums.<span class="built_in">size</span>();j++)&#123;</span><br><span class="line">               <span class="keyword">if</span>(nums[i]+nums[j]==target)&#123;</span><br><span class="line">                   res.<span class="built_in">push_back</span>(i);</span><br><span class="line">                   res.<span class="built_in">push_back</span>(j);</span><br><span class="line">                   <span class="keyword">return</span> res;</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>二刷（占坑)</p>
-<h4 id="94-二叉树的中序遍历"><a href="#94-二叉树的中序遍历" class="headerlink" title="94. 二叉树的中序遍历"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-inorder-traversal/">94. 二叉树的中序遍历</a></h4><p>2021.6.1 初刷</p>
-<p>时间复杂度：O(n)O(n)，其中 nn 为二叉树节点的个数。二叉树的遍历中每个节点会被访问一次且只会被访问一次。</p>
-<p>空间复杂度：O(n)O(n)。空间复杂度取决于递归的栈深度，而栈深度在二叉树为一条链的情况下会达到 O(n)O(n) 的级别。</p>
-<h5 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">    <span class="function">vector&lt;<span class="keyword">int</span>&gt; <span class="title">inorderTraversal</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!root) <span class="keyword">return</span> res;</span><br><span class="line">        <span class="built_in">inorder</span>(root);</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">inorder</span><span class="params">(TreeNode* node)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!node) <span class="keyword">return</span> ;</span><br><span class="line">        <span class="built_in">inorder</span>(node-&gt;left);</span><br><span class="line">        res.<span class="built_in">push_back</span>(node-&gt;val);</span><br><span class="line">        <span class="built_in">inorder</span>(node-&gt;right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/06/01/LeetCode%20%E7%83%AD%E9%A2%98%20HOT%20100/" data-id="ckpe6ezod00004gv5c8vq49an" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-OSI七层模型协议" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/06/01/OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B%E5%8D%8F%E8%AE%AE/" class="article-date">
-  <time class="dt-published" datetime="2021-06-01T15:08:38.906Z" itemprop="datePublished">2021-06-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="OSI七层模型协议"><a href="#OSI七层模型协议" class="headerlink" title="OSI七层模型协议"></a>OSI七层模型协议</h3><p>OSI的七层协议主要包括： -  物理层（physical layer） - 数据链路层（data link layer） - 网络层（network layer） - 运输层（transport layer） - 会话层（session layer） - 表示层（presentation layer） - 应用层（application layer）</p>
-<p>物理层：RJ45:水晶头网卡接口、CLOCK、IEEE802.3（中继器、集线器）,ISO2110,光导纤维，双绞线</p>
-<p>数据链路层：wi-fi, ATM, DTM,令牌环，以太网，PPPoE ,PPP、FR、HDLC、VLAN、MAC（网桥、交换机）</p>
-<p>网络层：IP、ICMP、ARP、RARP、OSPF、IPX、RIP、IGRP（交换机）</p>
-<p>传输层：TCP（T/TCP · Fast Open） UDP DCCP SCTP RSVP PPTP TLS/SSL</p>
-<p>会话层：NFS、SQL、NETBIOS、RPC</p>
-<p>表示层：JPEG、MPEG、ASII</p>
-<p>应用层：DHCP（v6） DNS FTP Gopher HTTP（SPDY、HTTP/2） IMAP4 IRC NNTP XMPP POP3 SIP SMTP SNMP SSH TELNET RPC RTCP RTP RTSP SDP SOAP GTP STUN NTP SSDP</p>
-<h3 id="1-TCP和UDP的-区别："><a href="#1-TCP和UDP的-区别：" class="headerlink" title="1.  TCP和UDP的 区别："></a>1.  TCP和UDP的 区别：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">TCP是面向有连接型，UDP是面向无连接型；</span><br><span class="line">TCP是一对一传输，UDP支持一对一、一对多、多对一和多对多的交互通信；</span><br><span class="line">TCP是面向字节流的，即把应用层传来的报文看成字节流，将字节流拆分成大小不等的数据块，并添加TCP首部；UDP是面向报文的，对应用层传下来的报文不拆分也不合并，仅添加UDP首部；</span><br><span class="line">TCP支持传输可靠性的多种措施，包括保证包的传输顺序、重发机制、流量控制和拥塞控制；UDP仅提供最基本的数据传输能力。</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-TCP对应的应用层协议有哪些？UDP对应的应用层协议有哪些？"><a href="#2-TCP对应的应用层协议有哪些？UDP对应的应用层协议有哪些？" class="headerlink" title="2. TCP对应的应用层协议有哪些？UDP对应的应用层协议有哪些？"></a>2. TCP对应的应用层协议有哪些？UDP对应的应用层协议有哪些？</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">TCP对应的典型的应用层协议：</span><br><span class="line">FTP：文件传输协议；</span><br><span class="line">SSH：远程登录协议；</span><br><span class="line">HTTP：web服务器传输超文本到本地浏览器的超文本传输协议。</span><br><span class="line"></span><br><span class="line">UDP对应的典型的应用层协议：</span><br><span class="line">DNS：域名解析协议；</span><br><span class="line">TFTP：简单文件传输协议；</span><br><span class="line">SNMP：简单网络管理协议。</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-常见的http动词有哪些？"><a href="#3-常见的http动词有哪些？" class="headerlink" title="3. 常见的http动词有哪些？"></a>3. 常见的http动词有哪些？</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">GET: 从服务器获取资源</span><br><span class="line">POST: 在服务器新建资源</span><br><span class="line">PUT: 在服务器更新资源</span><br><span class="line">DELETE: 在服务器删除资源</span><br><span class="line">HEAD: 获取资源的元数据</span><br><span class="line">OPTIONAL: 查询对指定的资源支持的方法</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-五层协议的体系结构，都有哪些协议？"><a href="#4-五层协议的体系结构，都有哪些协议？" class="headerlink" title="4. 五层协议的体系结构，都有哪些协议？"></a>4. 五层协议的体系结构，都有哪些协议？</h3><p><img src="C:\Users\cxdon\AppData\Roaming\Typora\typora-user-images\image-20210412163243140.png" alt="image-20210412163243140"></p>
-<h3 id="5-ping命令基于哪一层协议的原理是什么？"><a href="#5-ping命令基于哪一层协议的原理是什么？" class="headerlink" title="5. ping命令基于哪一层协议的原理是什么？"></a>5. ping命令基于哪一层协议的原理是什么？</h3><p>ping命令是基于网络层的命令，是基于ICMP协议工作的。</p>
-<h3 id="6-osi各层基本作用"><a href="#6-osi各层基本作用" class="headerlink" title="6.osi各层基本作用"></a>6.osi各层基本作用</h3><p>物理层——-比特流传输</p>
-<p>数据链路层——-控制网络层和物理层之间通信</p>
-<p>网络层——- ip寻址和路由选择</p>
-<p>传输层 ——–建立维护管理端到端连接</p>
-<p>会话层 ——–建立维护股那里会话连接</p>
-<p>表示层 ——–数据格式化 ,加密解密</p>
-<p>应用层 ——– 为应用程序提供网络服务</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/06/01/OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B%E5%8D%8F%E8%AE%AE/" data-id="ckpe6ezok00014gv51avsdmnq" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-关于2021的实习面经总结与复习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/06/01/%E5%85%B3%E4%BA%8E2021%E7%9A%84%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F%E6%80%BB%E7%BB%93%E4%B8%8E%E5%A4%8D%E4%B9%A0/" class="article-date">
-  <time class="dt-published" datetime="2021-06-01T15:08:38.893Z" itemprop="datePublished">2021-06-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="关于2021的实习面经总结与复习"><a href="#关于2021的实习面经总结与复习" class="headerlink" title="关于2021的实习面经总结与复习"></a>关于2021的实习面经总结与复习</h1><h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><p>1.osi七层网络模型    </p>
-<p>2.TCP/UDP</p>
-<p>3.Socket</p>
-<p>4.I/O复用</p>
-<p>5.ping/ICMP</p>
-<p>6.通信异常</p>
-<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><p>1.进程 线程 通信 死活锁 调度算法</p>
-<p>2.虚拟内存 缓存替换</p>
-<p>3.段页式存储</p>
-<p>4.用户态 内核态</p>
-<p>5.文件系统</p>
-<p>6.Linux 常用指令</p>
-<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p>1.事务 ACID</p>
-<p>2.索引</p>
-<p>3.并发异常 (脏写) 并发控制(乐观锁) 隔离级别</p>
-<p>4.深入学习某个数据库原理</p>
-<h3 id="数据结构和算法"><a href="#数据结构和算法" class="headerlink" title="数据结构和算法"></a>数据结构和算法</h3><p>1.排序算法(选择.插入.冒泡.归并.快排.堆.桶排序)</p>
-<p>2.二叉搜索树(B.B+.红黑树.AVL)</p>
-<p>3.二叉树遍历</p>
-<p>4.哈希,哈希冲突</p>
-<p>5.最短路径</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/06/01/%E5%85%B3%E4%BA%8E2021%E7%9A%84%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F%E6%80%BB%E7%BB%93%E4%B8%8E%E5%A4%8D%E4%B9%A0/" data-id="ckpe6ezom00024gv529md0grw" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-剑指offer学习指南" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-剑指offer学习指南" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/06/01/%E5%89%91%E6%8C%87offer%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/" class="article-date">
   <time class="dt-published" datetime="2021-06-01T15:08:38.886Z" itemprop="datePublished">2021-06-01</time>
@@ -375,101 +238,28 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-设计模式" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/06/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="article-date">
-  <time class="dt-published" datetime="2021-06-01T15:08:38.788Z" itemprop="datePublished">2021-06-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><h2 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h2><h4 id="1-开闭原则"><a href="#1-开闭原则" class="headerlink" title="1.开闭原则"></a>1.开闭原则</h4><p>对扩展开放,对修改关闭,增加功能是通过增加代码来实现的,而不是修改源代码</p>
-<h4 id="2-迪米塔法则"><a href="#2-迪米塔法则" class="headerlink" title="2.迪米塔法则"></a>2.迪米塔法则</h4><p>不接触系统内部,只暴露接口给使用者即可.</p>
-<h4 id="3-合成复用原则"><a href="#3-合成复用原则" class="headerlink" title="3.合成复用原则"></a>3.合成复用原则</h4><p>继承和组合优先使用组合.</p>
-<h4 id="4-单一职责原则"><a href="#4-单一职责原则" class="headerlink" title="4.单一职责原则"></a>4.单一职责原则</h4><p>类的职责单一,对外只提供一种功能,而引起类变化的原因都应该只有一个</p>
-<h4 id="5-里氏替换原则"><a href="#5-里氏替换原则" class="headerlink" title="5.里氏替换原则"></a>5.里氏替换原则</h4><p>多态</p>
-<h4 id="6-接口隔离原则"><a href="#6-接口隔离原则" class="headerlink" title="6.接口隔离原则"></a>6.接口隔离原则</h4><p>一个接口只提供一种对外功能</p>
-<h4 id="7-依赖倒转原则"><a href="#7-依赖倒转原则" class="headerlink" title="7.依赖倒转原则"></a>7.依赖倒转原则</h4><p>尽量让函数依赖抽象层</p>
-<h2 id="设计模式-1"><a href="#设计模式-1" class="headerlink" title="设计模式"></a>设计模式</h2><h4 id="1-简单工厂模式"><a href="#1-简单工厂模式" class="headerlink" title="1.简单工厂模式"></a>1.简单工厂模式</h4><p>不符合开闭原则,增加新功能通过修改源代码来实现 </p>
-<p>适用场景:1.工厂类负责创建对象少 2.客户端只知道传入工厂类的参数,对于如何创建对象不关心</p>
-<h4 id="2-工厂模式"><a href="#2-工厂模式" class="headerlink" title="2.工厂模式"></a>2.工厂模式</h4><p>简单工厂模式+开闭原则    优点:实现了对象创建和使用的分离</p>
-<p>​                                             缺点:增加系统中类的个数(增加新的工厂)</p>
-<p>适用场景:1.客户端不需要知道所需对象的类 2.抽象工厂类通过其子类来指定创建哪个对象 </p>
-<h4 id="3-抽象工厂模式"><a href="#3-抽象工厂模式" class="headerlink" title="3.抽象工厂模式"></a>3.抽象工厂模式</h4><p>针对产品族,而不是产品组成结构</p>
-<h4 id="4-单例模式"><a href="#4-单例模式" class="headerlink" title="4.单例模式"></a>4.单例模式</h4><p>系统只能有一个对象</p>
-<p>实现步骤:1.构造函数私有化</p>
-<p>​                2.增加静态私有的当前类的指针变量</p>
-<p>​                3.提供静态的对外接口,可以让用户获得单例对象</p>
-<p>懒汉式: 类调用时再创建对象,懒汉式碰到多线程是线程不安全 </p>
-<p>饿汉式:类先自我创建对象再调用,饿汉式时线程安全的</p>
-<h4 id="5-代理模式"><a href="#5-代理模式" class="headerlink" title="5.代理模式"></a>5.代理模式</h4><p>为其他对象提供一种代理以控制对这个对象的访问</p>
-<h4 id="6-外观模式"><a href="#6-外观模式" class="headerlink" title="6.外观模式"></a>6.外观模式</h4><p>就是将复杂的子类系统抽象到同一个接口进行管理,外界只需要通过此接口与子类进行交互,而不必直接与复杂的子类系统进行交互</p>
-<h4 id="7-适配器模式"><a href="#7-适配器模式" class="headerlink" title="7.适配器模式"></a>7.适配器模式</h4><p>将已经写好的接口,但是接口不符合需求,将写好的接口转换成目标需要的接口 </p>
-<h4 id="8-模板方法模式"><a href="#8-模板方法模式" class="headerlink" title="8.模板方法模式"></a>8.模板方法模式</h4><p>步骤不改变,子类的细节进行改变</p>
-<h4 id="9-策略模式"><a href="#9-策略模式" class="headerlink" title="9.策略模式"></a>9.策略模式</h4><p>定义了一系列的算法,并肩每一个算法封装起来,而且是他们还可以相互替换.让算法独立于是u哦那个他的客户而独立变化.</p>
-<h4 id="10-命令模式"><a href="#10-命令模式" class="headerlink" title="10.命令模式"></a>10.命令模式</h4><p>将不同方法继承统一的命令接口定义为请求类,可加入请求队列中,好进行统一的处理请求</p>
-<h4 id="11-观察者模式"><a href="#11-观察者模式" class="headerlink" title="11.观察者模式"></a>11.观察者模式</h4><p>观察目标改变观察者也随之相应改变,一个类影响其他的类</p>
-<h4 id="12-装饰模式"><a href="#12-装饰模式" class="headerlink" title="12.装饰模式"></a>12.装饰模式</h4><p>通过一种对客户端透明的方式来扩展对象功能,时继承关系的一种替代</p>
+    <a href="/2021/06/01/%E5%85%B3%E4%BA%8E2021%E7%9A%84%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F%E6%80%BB%E7%BB%93%E4%B8%8E%E5%A4%8D%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/06/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/06/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" data-id="ckpe6ezoo00044gv5ey3k0wbo" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-Unity 学习笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/06/01/Unity%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time class="dt-published" datetime="2021-06-01T15:08:38.786Z" itemprop="datePublished">2021-06-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Unity-学习笔记"><a href="#Unity-学习笔记" class="headerlink" title="Unity 学习笔记"></a>Unity 学习笔记</h1><h5 id="2021-5-31"><a href="#2021-5-31" class="headerlink" title="2021.5.31"></a>2021.5.31</h5><h6 id="1-刚体组件"><a href="#1-刚体组件" class="headerlink" title="1.刚体组件"></a>1.刚体组件</h6><p>Rigidbody [方法1:AddForce(vector3.right)]</p>
-<h6 id="2-获取组件"><a href="#2-获取组件" class="headerlink" title="2.获取组件"></a>2.获取组件</h6><p>GetComponent<Rigidbody>()  获取刚体组件</p>
-<h6 id="3-物体控制"><a href="#3-物体控制" class="headerlink" title="3.物体控制"></a>3.物体控制</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">float h= Input.GetAxis(&quot;Horizontal&quot;);【监听左右】</span><br><span class="line"></span><br><span class="line">float v= Input.GetAxis(&quot;Vertical&quot;);【监听上下】</span><br><span class="line"></span><br><span class="line">rd.AddForce(new Vector3(h,0,v));</span><br></pre></td></tr></table></figure>
-
-<h6 id="4-简单相机跟随"><a href="#4-简单相机跟随" class="headerlink" title="4.简单相机跟随"></a>4.简单相机跟随</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">public class FollowTarget : MonoBehaviour</span><br><span class="line">&#123;</span><br><span class="line">    public Transform PlayerTransform;</span><br><span class="line">    private Vector3 offset;</span><br><span class="line">void Start()&#123;</span><br><span class="line">    offset = transform.position - playerTransform.position;</span><br><span class="line">&#125;</span><br><span class="line">void Update()&#123;</span><br><span class="line">    transform.position = offset + PlayerTransform;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="5-模板"><a href="#5-模板" class="headerlink" title="5.模板"></a>5.模板</h6><p>Prefabs 预制体</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/06/01/Unity%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="ckpe6ezon00034gv5grjr3e2a" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
