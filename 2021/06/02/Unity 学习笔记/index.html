@@ -23,6 +23,22 @@
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
 
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
 
 <!-- 主题依赖的图标库，不要自行修改 -->
 
@@ -48,7 +64,7 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -147,17 +163,50 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="An elegant Material-Design theme for Hexo">
+            <span class="h2" id="subtitle" title="">
               
             </span>
 
             
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-06-02 09:26" pubdate>
+        2021年6月2日 上午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      107 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      1
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
           
         </div>
       </div>
@@ -166,268 +215,81 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/06/02/LeetCode%20%E7%83%AD%E9%A2%98%20HOT%20100/" target="_self">
-          
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/06/02/LeetCode%20%E7%83%AD%E9%A2%98%20HOT%20100/" target="_self">
-          
-          
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
             
-          
-          🔥 LeetCode 热题 HOT 1001. 两数之和2021.5.31 初刷
-时间复杂度：O（n^2）
-空间复杂度：O（1）
-暴力求解12345678910111213141516class Solution &#123;public:    vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums, int target) &#123;   
-        </a>
-      </p>
+            <div class="markdown-body">
+              <h1 id="Unity-学习笔记"><a href="#Unity-学习笔记" class="headerlink" title="Unity 学习笔记"></a>Unity 学习笔记</h1><h5 id="2021-5-31"><a href="#2021-5-31" class="headerlink" title="2021.5.31"></a>2021.5.31</h5><h6 id="1-刚体组件"><a href="#1-刚体组件" class="headerlink" title="1.刚体组件"></a>1.刚体组件</h6><p>Rigidbody [方法1:AddForce(vector3.right)]</p>
+<h6 id="2-获取组件"><a href="#2-获取组件" class="headerlink" title="2.获取组件"></a>2.获取组件</h6><p>GetComponent<Rigidbody>()  获取刚体组件</p>
+<h6 id="3-物体控制"><a href="#3-物体控制" class="headerlink" title="3.物体控制"></a>3.物体控制</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs c#">float h= Input.GetAxis(&quot;Horizontal&quot;);【监听左右】<br><br>float v= Input.GetAxis(&quot;Vertical&quot;);【监听上下】<br><br>rd.AddForce(new Vector3(h,0,v));<br></code></pre></td></tr></table></figure>
 
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-06-02 09:26" pubdate>
-              2021-06-02
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
+<h6 id="4-简单相机跟随"><a href="#4-简单相机跟随" class="headerlink" title="4.简单相机跟随"></a>4.简单相机跟随</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs c#">public class FollowTarget : MonoBehaviour<br>&#123;<br>    public Transform PlayerTransform;<br>    private Vector3 offset;<br>void Start()&#123;<br>    offset = transform.position - playerTransform.position;<br>&#125;<br>void Update()&#123;<br>    transform.position = offset + PlayerTransform;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/06/02/OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B%E5%8D%8F%E8%AE%AE/" target="_self">
-          
-        </a>
-      </h1>
+<h6 id="5-模板"><a href="#5-模板" class="headerlink" title="5.模板"></a>5.模板</h6><p>Prefabs 预制体</p>
 
-      <p class="index-excerpt">
-        <a href="/2021/06/02/OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B%E5%8D%8F%E8%AE%AE/" target="_self">
-          
-          
-            
-          
-          OSI七层模型协议OSI的七层协议主要包括： -  物理层（physical layer） - 数据链路层（data link layer） - 网络层（network layer） - 运输层（transport layer） - 会话层（session layer） - 表示层（presentation layer） - 应用层（application layer）
-物理层：RJ45:水晶头网
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-06-02 09:26" pubdate>
-              2021-06-02
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/06/02/%E5%85%B3%E4%BA%8E2021%E7%9A%84%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F%E6%80%BB%E7%BB%93%E4%B8%8E%E5%A4%8D%E4%B9%A0/" target="_self">
-          
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/06/02/%E5%85%B3%E4%BA%8E2021%E7%9A%84%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F%E6%80%BB%E7%BB%93%E4%B8%8E%E5%A4%8D%E4%B9%A0/" target="_self">
-          
-          
-            
-          
-          关于2021的实习面经总结与复习计算机网络1.osi七层网络模型    
-2.TCP/UDP
-3.Socket
-4.I/O复用
-5.ping/ICMP
-6.通信异常
-操作系统1.进程 线程 通信 死活锁 调度算法
-2.虚拟内存 缓存替换
-3.段页式存储
-4.用户态 内核态
-5.文件系统
-6.Linux 常用指令
-数据库1.事务 ACID
-2.索引
-3.并发异常 (脏写) 并发控制(乐观锁) 隔离级
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-06-02 09:26" pubdate>
-              2021-06-02
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/06/02/%E5%89%91%E6%8C%87offer%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/" target="_self">
-          
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/06/02/%E5%89%91%E6%8C%87offer%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/" target="_self">
-          
-          
-            
-          
-          剑指offer学习指南剑指 Offer 04. 二维数组中的查找123456789101112131415//2021.3.6 暴力破解class Solution &#123;public:    bool findNumberIn2DArray(vector&lt;vector&lt;int&gt;&gt;&amp; matrix, int target) &#123;        bool
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-06-02 09:26" pubdate>
-              2021-06-02
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/06/02/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" target="_self">
-          
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/06/02/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" target="_self">
-          
-          
-            
-          
-          设计模式设计原则1.开闭原则对扩展开放,对修改关闭,增加功能是通过增加代码来实现的,而不是修改源代码
-2.迪米塔法则不接触系统内部,只暴露接口给使用者即可.
-3.合成复用原则继承和组合优先使用组合.
-4.单一职责原则类的职责单一,对外只提供一种功能,而引起类变化的原因都应该只有一个
-5.里氏替换原则多态
-6.接口隔离原则一个接口只提供一种对外功能
-7.依赖倒转原则尽量让函数依赖抽象层
-设计模式1.
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-06-02 09:26" pubdate>
-              2021-06-02
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/06/02/Unity%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-          
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/06/02/Unity%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-          
-          
-            
-          
-          Unity 学习笔记2021.5.311.刚体组件Rigidbody [方法1:AddForce(vector3.right)]
-2.获取组件GetComponent()  获取刚体组件
-3.物体控制12345float h= Input.GetAxis(&quot;Horizontal&quot;);【监听左右】float v= Input.GetAxis(&quot;Vertical&quot
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-06-02 09:26" pubdate>
-              2021-06-02
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/06/02/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -507,9 +369,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
 
 
 
